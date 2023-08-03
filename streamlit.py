@@ -9,4 +9,4 @@ my_cur = my_cnx.cursor()
 my_cur.execute("select color_or_style from catalog_for_website")
 my_catalog = my_cur.fetchall()
 # put the dafta into a dataframe
-streamlit.DataFrame(my_catalog)
+streamlit.dataframe(my_catalog)
